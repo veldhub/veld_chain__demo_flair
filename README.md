@@ -1,6 +1,7 @@
-# ![veld chain](https://raw.githubusercontent.com/veldhub/.github/refs/heads/main/images/symbol_V_letter.png) veld_chain__REPLACE
+# ![veld chain](https://raw.githubusercontent.com/veldhub/.github/refs/heads/main/images/symbol_V_letter.png) veld_chain__flair
 
-This repo contains [chain velds](https://zenodo.org/records/13322913) encapsulating REPLACE
+This repo contains [chain velds](https://zenodo.org/records/13322913) encapsulating a demo training
+and inference setup using [flair](https://github.com/flairnlp/flair)
 
 ## requirements
 
@@ -10,18 +11,16 @@ This repo contains [chain velds](https://zenodo.org/records/13322913) encapsulat
 
 Clone this repo with all its submodules
 ```
-git clone --recurse-submodules REPLACE
+git clone --recurse-submodules https://github.com/veldhub/veld_chain__demo_flair.git
 ```
 
 ## how to reproduce
 
 The following chain velds were used. Open the respective veld yaml file for more information.
 
-**[./veldREPLACE.yaml](./veldREPLACE.yaml)** 
-
-REPLACE
+**[./veld_demo_01__infer_ner.yaml](./veld_demo_01__infer_ner.yaml)** 
 
 ```
-docker compose -f veldREPLACE.yaml up
+docker compose -f veld_demo_01__infer_ner.yaml up
 ```
 
