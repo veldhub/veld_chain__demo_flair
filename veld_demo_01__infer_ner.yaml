@@ -1,0 +1,17 @@
+
+
+services:
+  veld_demo_01__infer_ner:
+    extends:
+      file: ./code/veld_code__flair/veld_infer.yaml
+      service: veld_infer
+    volumes:
+      - ./data/demo_01/in/:/veld/input/data/
+      - ./data/demo_01/out/:/veld/output/
+    environment:
+      in_file: test.txt
+      out_file: text.json
+      do_split_sentences: true
+      model_infer_ner: "flair/ner-german-large"
+      model_infer_sentiment: "sentiment"
+
