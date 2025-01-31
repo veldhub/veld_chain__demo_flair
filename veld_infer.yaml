@@ -1,0 +1,9 @@
+
+services:
+  veld_infer:
+    build: .
+    command: python /veld/code/infer.py
+    volumes:
+      - ./src/workflows/:/veld/code/
+      - ./data/models_cache/:/veld/input/models_cache/
+
