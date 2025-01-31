@@ -7,6 +7,7 @@ services:
       service: veld_infer
     volumes:
       - ./data/demo_01/in/:/veld/input/data/
+      - ./data/models_cache/:/veld/input/models_cache/
       - ./data/demo_01/out/:/veld/output/
     environment:
       in_file: test.txt
