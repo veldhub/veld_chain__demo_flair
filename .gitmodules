@@ -1,0 +1,3 @@
+[submodule "code/veld_code__flair"]
+	path = code/veld_code__flair
+	url = https://github.com/veldhub/veld_code__flair.git
