@@ -1,0 +1,35 @@
+x-veld:
+  code:
+    description:
+    topic:
+    additional:
+
+    input:
+      - volume: /veld/input/
+        file_type:
+        content:
+        environemnt_var:
+
+    output:
+      - volume: /veld/output/
+        file_type:
+        content:
+        environemnt_var:
+
+    config:
+      - environemnt_var:
+        description:
+        var_type:
+        default:
+        optional:
+
+services:
+  veld_jupyter_notebook:
+    build: .
+    command: jupyter notebook --allow-root --ip='*' --NotebookApp.token='' --NotebookApp.password=''
+    ports:
+      - 8888:8888
+    volumes:
+      - ./src/jupyter_notebooks/:/veld/code/
+    working_dir: /veld/code/
+
