@@ -21,9 +21,9 @@ git clone --recurse-submodules https://github.com/veldhub/veld_chain__demo_flair
 
 The following chain velds were used. Open the respective veld yaml file for more information.
 
-**[./veld_demo_01__infer_ner.yaml](./veld_demo_01__infer_ner.yaml)** 
+**[./veld_demo_01_infer.yaml](./veld_demo_01_infer.yaml)** 
 
 ```
-docker compose -f veld_demo_01__infer_ner.yaml up
+docker compose -f veld_demo_01_infer.yaml up
 ```
 
