@@ -10,7 +10,7 @@ services:
       - ./data/models_cache/:/veld/input/models_cache/
       - ./data/demo_01_infer/out/:/veld/output/
     environment:
-      run_interactively: true
+      run_interactively: false
       in_file: test.txt
       out_file: text.json
       do_split_sentences: true
